@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website">
+    <meta name="theme-color" content="#ff305b">
+    <title>Fokir | Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="container navbar-inner">
+            <a class="brand" href="#home">Fokir</a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a class="nav-link active" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#services">Services</a></li>
+                <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link" href="#feedback">Testimonial</a></li>
+                <li><a class="nav-link" href="#blog">Blog</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+            <p class="hero-intro">Hello i'm</p>
+            <h1>ALEX SMITH</h1>
+            <p class="hero-role">Professional <span class="typed-role" aria-label="Web Designer">Web Designer</span></p>
+        </div>
+        <a class="scroll-down" href="#about" aria-label="Scroll to About"><i class="fa-solid fa-chevron-down"></i></a>
+    </header>
+
+    <main>
+        <section class="about section" id="about">
+            <div class="container about-layout">
+                <div class="profile-column">
+                    <div class="profile-frame">
+                        <img src="assignment 1/images/managertext.jpg" alt="Alex Smith portrait">
+                        <div class="profile-overlay" aria-label="Social links">
+                            <a href="#contact" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#contact" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#contact" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                            <a href="#contact" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-copy">
+                    <h2>HELLO,</h2>
+                    <p class="about-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <hr>
+                    <div class="profile-details">
+                        <ul>
+                            <li><strong>Name:</strong> Rdam smith</li>
+                            <li><strong>Age:</strong> 26 Year</li>
+                            <li><strong>Freelance:</strong> Available</li>
+                        </ul>
+                        <ul>
+                            <li><strong>Job Title:</strong> UI/UX Designer</li>
+                            <li><strong>Location:</strong> United States, US</li>
+                            <li><strong>E-mail:</strong> example@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="about-actions">
+                        <a class="button" href="#contact">Download cv <i class="fa-solid fa-download"></i></a>
+                        <a class="button" href="#contact">Hire me <i class="fa-solid fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section section-muted" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our Services</h2>
+                    <div class="heading-rule"></div>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <h3>UI/UX DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necessitatibus.</p>
+                    </article>
+                    <article class="service-card">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>APP DEVELOPMENT</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necessitatibus.</p>
+                    </article>
+                    <article class="service-card">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <h3>PRODUCT DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necessitatibus.</p>
+                    </article>
+                    <article class="service-card">
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>UI/UX DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necessitatibus.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our Portfolio</h2>
+                    <div class="heading-rule"></div>
+                </div>
+                <div class="portfolio-filters" role="group" aria-label="Filter portfolio projects">
+                    <button class="filter-button active" type="button" data-filter="all">All</button>
+                    <button class="filter-button" type="button" data-filter="graphic">Graphic</button>
+                    <button class="filter-button" type="button" data-filter="web">Web Design</button>
+                    <button class="filter-button" type="button" data-filter="branding">Branding</button>
+                </div>
+                <div class="portfolio-grid">
+                    <article class="portfolio-item" data-category="graphic">
+                        <img src="assignment 1/images/pngtree-employees-with-managers-at-work-or-management-team-on-a-circle-image_13300260.jpg" alt="Portfolio project: graphic design">
+                        <a href="#contact" aria-label="View graphic design project"><i class="fa-solid fa-link"></i></a>
+                    </article>
+                    <article class="portfolio-item" data-category="web">
+                        <img src="assignment 1/images/pngtree-professional-businessman-writing-notes-at-desk-image_21072906.webp" alt="Portfolio project: web design">
+                        <a href="#contact" aria-label="View web design project"><i class="fa-solid fa-link"></i></a>
+                    </article>
+                    <article class="portfolio-item" data-category="branding">
+                        <img src="assignment 1/images/pngtree-young-employee-working-in-the-office-manager-document-accountant-photo-image_33326982.jpg" alt="Portfolio project: branding">
+                        <a href="#contact" aria-label="View branding project"><i class="fa-solid fa-link"></i></a>
+                    </article>
+                    <article class="portfolio-item" data-category="web">
+                        <img src="assignment 1/images/148449-الموظف-المثالى-(1).webp" alt="Portfolio project: responsive website">
+                        <a href="#contact" aria-label="View responsive website project"><i class="fa-solid fa-link"></i></a>
+                    </article>
+                    <article class="portfolio-item" data-category="graphic">
+                        <img src="assignment 1/images/img8.jpg.jfif" alt="Portfolio project: creative design">
+                        <a href="#contact" aria-label="View creative design project"><i class="fa-solid fa-link"></i></a>
+                    </article>
+                    <article class="portfolio-item" data-category="branding">
+                        <img src="assignment 1/images/images.jfif" alt="Portfolio project: brand identity">
+                        <a href="#contact" aria-label="View brand identity project"><i class="fa-solid fa-link"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="statistics section-muted" aria-label="Portfolio statistics">
+            <div class="container statistics-grid">
+                <div class="stat-item"><i class="fa-solid fa-users"></i><strong>72</strong><span>Team members</span></div>
+                <div class="stat-item"><i class="fa-solid fa-file-circle-check"></i><strong>127</strong><span>Complete Projects</span></div>
+                <div class="stat-item"><i class="fa-solid fa-cloud-arrow-down"></i><strong>648</strong><span>Files Downloaded</span></div>
+                <div class="stat-item"><i class="fa-solid fa-mug-hot"></i><strong>432</strong><span>Lines Of Code</span></div>
+            </div>
+        </section>
+
+        <section class="feedback section" id="feedback">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Client's Feedback</h2>
+                    <div class="heading-rule"></div>
+                </div>
+                <div class="testimonial-card" aria-live="polite">
+                    <div class="testimonial-slide active">
+                        <img src="assignment 1/images/download (1).jfif" alt="Client Alex Ander">
+                        <div class="testimonial-copy">
+                            <h3>Alex ander</h3>
+                            <p class="client-location"><i class="fa-solid fa-location-dot"></i> United</p>
+                            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ducimus ex magni sunt, architecto vel dolore, laudantium dignissimos debitis optio! Exercitationem adipisicing elit.</p>
+                            <div class="rating" aria-label="4 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <img src="assignment 1/images/download (2).jfif" alt="Client Alex Ander">
+                        <div class="testimonial-copy">
+                            <h3>Alex ander</h3>
+                            <p class="client-location"><i class="fa-solid fa-location-dot"></i> United</p>
+                            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ducimus ex magni sunt, architecto vel dolore, laudantium dignissimos debitis optio! Exercitationem adipisicing elit.</p>
+                            <div class="rating" aria-label="4 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <img src="assignment 1/images/download.jfif" alt="Client Alex Ander">
+                        <div class="testimonial-copy">
+                            <h3>Alex ander</h3>
+                            <p class="client-location"><i class="fa-solid fa-location-dot"></i> United</p>
+                            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ducimus ex magni sunt, architecto vel dolore, laudantium dignissimos debitis optio! Exercitationem adipisicing elit.</p>
+                            <div class="rating" aria-label="4 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots" role="group" aria-label="Choose testimonial">
+                    <button class="testimonial-dot active" type="button" aria-label="Testimonial 1"></button>
+                    <button class="testimonial-dot" type="button" aria-label="Testimonial 2"></button>
+                    <button class="testimonial-dot" type="button" aria-label="Testimonial 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog section section-muted" id="blog">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our Blog</h2>
+                    <div class="heading-rule"></div>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <img src="assignment 1/images/pngtree-employees-with-managers-at-work-or-management-team-on-a-circle-image_13300260.jpg" alt="Creative work at a desk">
+                        <div class="blog-copy">
+                            <p class="blog-date">23 November, 2015</p>
+                            <h3><a href="#contact">Web Design Blog Post</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
+                            <a class="read-more" href="#contact">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-video"><iframe src="https://www.youtube-nocookie.com/embed/uVju5--RqtY" title="Web design video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                        <div class="blog-copy">
+                            <p class="blog-date">23 November, 2015</p>
+                            <h3><a href="#contact">Web Design Blog Post</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
+                            <a class="read-more" href="#contact">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img src="assignment 1/images/download (2).jfif" alt="Designer at work">
+                        <div class="blog-copy">
+                            <p class="blog-date">23 November, 2015</p>
+                            <h3><a href="#contact">Web Design Blog Post</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
+                            <a class="read-more" href="#contact">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Contact Us</h2>
+                    <div class="heading-rule"></div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Name" aria-label="Name" required>
+                        <input type="email" name="email" placeholder="Email" aria-label="Email" required>
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" aria-label="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Message for me" aria-label="Message for me" required></textarea>
+                    <button class="button" type="submit">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-icons">
+            <a href="#contact" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#contact" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#contact" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+            <a href="#contact" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p>Copy Right 2024 © By <a href="#home">Theme-fair</a> All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const roleElement = document.querySelector('.typed-role');
+        const roleOptions = ['Web Designer'];
+        let currentRole = 0;
+        let rolePosition = roleOptions[currentRole].length;
+        let deletingRole = true;
+        const animateRole = () => {
+            const currentText = roleOptions[currentRole];
+            if (deletingRole) {
+                rolePosition -= 1;
+                roleElement.textContent = currentText.slice(0, rolePosition);
+                if (rolePosition === 0) {
+                    deletingRole = false;
+                    currentRole = (currentRole + 1) % roleOptions.length;
+                    window.setTimeout(animateRole, 300);
+                    return;
+                }
+                window.setTimeout(animateRole, 55);
+                return;
+            }
+            const nextText = roleOptions[currentRole];
+            rolePosition += 1;
+            roleElement.textContent = nextText.slice(0, rolePosition);
+            if (rolePosition >= nextText.length) {
+                deletingRole = true;
+                rolePosition = nextText.length;
+                window.setTimeout(animateRole, 1200);
+                return;
+            }
+            window.setTimeout(animateRole, 100);
+        };
+        window.setTimeout(animateRole, 1300);
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+        document.querySelectorAll('.nav-link').forEach((link) => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                document.querySelectorAll('.nav-link').forEach((item) => item.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+        document.querySelectorAll('.filter-button').forEach((button) => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+                document.querySelectorAll('.filter-button').forEach((item) => item.classList.toggle('active', item === button));
+                document.querySelectorAll('.portfolio-item').forEach((item) => {
+                    item.hidden = filter !== 'all' && item.dataset.category !== filter;
+                });
+            });
+        });
+        const testimonialSlides = [...document.querySelectorAll('.testimonial-slide')];
+        const testimonialDots = [...document.querySelectorAll('.testimonial-dot')];
+        let testimonialIndex = 0;
+        const showTestimonial = (index) => {
+            testimonialIndex = index;
+            testimonialSlides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+            testimonialDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+        };
+        testimonialDots.forEach((dot, index) => dot.addEventListener('click', () => showTestimonial(index)));
+        window.setInterval(() => showTestimonial((testimonialIndex + 1) % testimonialSlides.length), 6000);
+        document.querySelector('#contact-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const formData = new FormData(event.currentTarget);
+            const subject = encodeURIComponent(formData.get('subject'));
+            const body = encodeURIComponent(`Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\n\n${formData.get('message')}`);
+            window.location.href = `mailto:example@gmail.com?subject=${subject}&body=${body}`;
+        });
+    </script>
+</body>
+</html>
